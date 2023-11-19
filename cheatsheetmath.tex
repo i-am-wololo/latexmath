@@ -1,0 +1,48 @@
+\documentclass[8pt]{article}
+\author{Mehdi}
+\title{fiche de cheatsheet m12}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{geometry}
+
+% higher title
+\makeatletter
+\renewcommand{\maketitle}{%
+  \vspace*{-12em} % Adjust the value as needed to move the title up or down
+  \begin{center}%
+    \let\footnote\thanks % Optional, to add footnotes to the title
+    {\LARGE\@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+}
+\makeatother
+
+
+\geometry{
+  a4paper,
+  left=2cm,
+  right=2cm,
+}
+
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+  {-1ex plus -.5ex minus -.2ex}%
+  {0.5ex plus .2ex}%x
+  {\normalfont\large\bfseries}} % Change the font size here (e.g., \large)
+\makeatother
+
+\begin{document}
+	\maketitle
+	\begin{multicols}{2}
+		\input{content.tex}
+  	
+  	\end{multicols}
+	
+\end{document}
