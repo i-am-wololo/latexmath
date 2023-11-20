@@ -1,4 +1,70 @@
 \section{fonctions}
-	\subsection{Logarithme}
+	\subsection{definitions}
+
+	\subsection{Logarithme n\'ep\'erien}
+	\textbf{Propri\'et\'es}: \\
+	\begin{align*}
+		\ln \rightarrow \mathbb{R}^+_*,\\
+		\frac{d}{dx}\ln \rightarrow \frac{1}{x}\\
+		\ln(1) = 0
+	\end{align*}
+	\subsubsection{Propri\'et\'es du logarithme}
+		\begin{itemize}
+			\item $\ln$ est une bijection strict-crois de $\mathbb{R}_+^*$
+			\item Pour tout r\'eels $a>0$ et $b>0$:
+			\begin{equation*}
+   				\ln(ab) = \ln(a)+\ln(b)	
+   			\end{equation*}
+		\item Pour tout r\'el $a>0$ et tout entier relatif $n \in \mathbb{Z}$:
+		\begin{equation*}
+			\ln(a^n)=a\ln(a)
+    		\end{equation*}
+			
+		\end{itemize}
+	
+	\newtheorem{definition}{$\log_a$}
+	\begin{definition}
+		\begin{equation}
+			\log_a:x \rightarrow\log_a(x)=\frac{\ln(x)}{\ln(a)}
+  		\end{equation}
+	\end{definition}
+	\subsubsection{Propri\'et\'es du logarithme en base $a$}
+		\begin{itemize}
+			\item La fonction $\log_a$ est une bijection de $$\mathbb{R}^*_+$$
+			\item on a:
+			\begin{equation*}
+					\log_a(1)=0\quad et \quad log_a(a)=1	
+    			\end{equation*}
+			\item pour tout r\'eels $\{c, d\} >0$:
+			\begin{align*}
+    				log_a(cd)=log_a(c)+log_a(d) \\
+				log_a(\frac{c}{d})=log_a(c)-log_a(d)
+    			\end{align*}
+			\item pour tout r\'eel $c>0$, on a
+			\begin{equation*}
+   				\log_a(ac)=\log_a(c)+1		
+   			\end{equation*}
+			\item on suppose que $a>1$. Donc, $\forall c>0$ on a: \\
+				$n$ est la partie enti\`ere de $\log_a(c)$ (c\`ad $n \leq \log_a(c) < n+1$) si et seulement si
+				\begin{equation*}
+					a^n\leq c < a^{n+1}
+   				 \end{equation*}	
+		\end{itemize}
+		\newtheorem{example}{Exemple}
+		\begin{example}
+			Dans le cas du log en base 10, on obtient:
+			\begin{equation*}
+				\log_{10}(10c)=\log_10(c)+1
+			\end{equation*}
+			et la partie enti\`ere de $\log_10(c)$ est le nombre entier $n$ tel que:
+			\begin{equation}
+				10^n\leq x < 10^{n+1}
+			\end{equation}
+			ou autrement dit $c \in [10^n,10^{n+1}]$
+		\end{example}
 
 	\subsection{exponentielle}
+
+	% \subsection{quelque graphes}
+	
+
