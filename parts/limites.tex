@@ -1,0 +1,41 @@
+\section{Limites}
+	\subsection{limites d'une suite}
+	\begin{definition}
+		on dit d'une suite $x_n$ qu'elle a une limite si:
+		\begin{itemize}
+			\item tend vers $+\infty$ si:
+			\begin{equation*}
+				\forall M \in \mathbb{R}, \exists k \in \mathbb{N}, \forall n \geq k, x_n\geq M 
+			\end{equation*}
+
+			\item tend vers $-\infty$ si:
+			\begin{equation*}
+				\forall M \in \mathbb{R}, \exists k \in \mathbb{N}, \forall n \geq k, x_n\leq M 
+			\end{equation*}
+		\end{itemize}
+	\end{definition}
+	Une suite est divergente si elle n'admet pas de limites
+	\begin{definition}
+		operations sur les limites
+		\begin{gather*}
+			\lim_{x \to a} f(x)+g(x)=\lim_{x \to a} f(x)+\lim_{x \to a} g(x) \\
+			\lim_{x \to a} f(x)g(x)=\lim_{x \to a} f(x)*\lim_{x \to a} g(x) \\
+			\lim_{x \to a} \frac{f(x)}{g(alignx)}=\frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}
+		\end{gather*}
+	\end{definition}
+	\subsection{limites d'une fonction}
+	
+	\begin{theorem}{Des gendarmes}
+		on consid\`ere 3 fonctions $f$, $g$ et $h$, et une intervalle a pour lequelles:
+		\begin{equation*}
+			\forall x \in I \ {a} f(x)\leq g(x) \leq h(x)	
+   		\end{equation*}
+		si $f$ et $h$ ont les m\^emes limites, alors $g$ a aussi la limite:
+		\begin{equation*}
+			\lim_{limit{x \to a}}f(x) = \lim_{limit{x \to a}}g(x) = \lim_{limit{x \to a}}h(x)  
+		\end{equation*}
+	\end{theorem}
+	
+	% \begin{theorem}{De l'H\^opital}
+	%
+	% \end{theorem}

@@ -1,6 +1,10 @@
 \section{fonctions}
 	\subsection{definitions}
-
+		\begin{itemize}
+			\item injective si les images ne partagent pas d'ant\'ecedents
+			\item surjective si toutes les images poss\`edent au moins un ant\'ecedent
+			\item bijective si toutes les images ont un ant\'ecedent unique
+		\end{itemize}
 	\subsection{Logarithme n\'ep\'erien}
 	\textbf{Propri\'et\'es}: \\
 	\begin{align*}
@@ -22,8 +26,7 @@
 			
 		\end{itemize}
 	
-	\newtheorem{definition}{$\log_a$}
-	\begin{definition}
+		\begin{definition}
 		\begin{equation}
 			\log_a:x \rightarrow\log_a(x)=\frac{\ln(x)}{\ln(a)}
   		\end{equation}
@@ -50,7 +53,6 @@
 					a^n\leq c < a^{n+1}
    				 \end{equation*}	
 		\end{itemize}
-		\newtheorem{example}{Exemple}
 		\begin{example}
 			Dans le cas du log en base 10, on obtient:
 			\begin{equation*}
@@ -64,7 +66,37 @@
 		\end{example}
 
 	\subsection{exponentielle}
+	\begin{definition}
+		La fonction exponentielle not\'ee $\exp$, est d\'efini sur $\mathbb{R}$
+		\begin{equation}
+			\exp(0)=1 \quad et \quad \exp'(x)=\exp(x), \forall x \in \mathbb{R}  
+		\end{equation}
+		\subsubsection{Propri\'et\'es}
+		\begin{itemize}
+			\item $\exp$ est r\'eciproque de $\ln$: c'est une bijection strict-crois de $\mathbb{R}$ dans $\mathbb{R}_+^*$, et
+			\begin{align*}
+				\forall x, \ln(\exp(x)) = x \quad et \quad \forall x>0 \exp(\ln(x))x \\
+				\exp(1)=e
+			\end{align*}
+			
+		\end{itemize}
+		Puisque $\exp$ est r\'eciproque de $\ln$, son graphe est symmetrique
 
-	% \subsection{quelque graphes}
+	\end{definition}
+	
+	\subsection{transformations}
+	\begin{itemize}
+		\item translation verticale $f(x) +c$
+		\item translation horizontale $f(x+c)$
+		\item dilation ou contraction verticale $f(x)a$
+		\item dilation ou contraction horizontale $f(xa)$
+	\end{itemize}
+	\subsection{trigonometrie}
+	\begin{align*}
+		\cos(\pi -x) =  -\cos(x); \sin(\pi-x)=\sin(x) \\
+		\cos(\pi+x) = -\cos(x); \sin(\pi+x)=-\sin(x) \\
+		\cos(\frac{\pi}{2}-x)=sin(x); \sin(\frac{\pi}{2}-x)=cos(x) \\
+		\cos(\frac{\pi}{2}+x)=-sin(x); \sin(\frac{\pi}{2}+x)=cos(x)
+	\end{align*}
 	
 

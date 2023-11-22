@@ -5,6 +5,7 @@
 \usepackage{titlesec}
 \usepackage{geometry}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{amsfonts}
 
 % higher title
@@ -26,6 +27,13 @@
 }
 \makeatother
 
+\geometry{
+    a4paper,
+    left=1cm,   % Adjust this value to increase/decrease left margin
+    right=1cm,  % Adjust this value to increase/decrease right margin
+    top=2cm,    % Adjust this value to increase/decrease top margin
+    bottom=2cm  % Adjust this value to increase/decrease bottom margin
+}
 \makeatletter
 \renewcommand{\section}{\@startsection{section}{1}{0mm}%
   {-1ex plus -.5ex minus -.2ex}%
@@ -39,5 +47,17 @@
 		\input{content.tex}
   	
   	\end{multicols}
-	
+	\begin{table}
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+  			& $f(x)=x\sin(\frac{1}{x})$ & $f(x)=\frac{1}{x}\sin(x)$ & $f(x)=x\cos(\frac{1}{x})$ & $f(x)=\frac{1}{x}\cos(x)$ \\
+  	 		 \hline
+  	 		 $\lim\limits_{x\to0}f(x)$ & $0$ & $1$ & $0$ & $\nexists$ \\
+  	 		 \hline
+  	 		 $\lim\limits_{x\to\infty}f(x)$ & $1$ & $0$ & $+\infty$ & $0$ \\
+  	 		 \hline
+  	 		 $\lim\limits_{x\to-\infty}f(x)$ & $1$ & $0$ & $-\infty$ & $0$ \\
+  	 		 \hline
+		\end{tabular}
+	\end{table}
 \end{document}
