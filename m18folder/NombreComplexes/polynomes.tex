@@ -1,0 +1,76 @@
+\subsection{Les Polynomes}
+Un polynome est définit comme suit
+\begin{equation*}
+	P(x) = 0+0_1X+0_2X^2+0_3X^3+...+0_nX^n 
+\end{equation*}
+polynome comme objet abstrait P \\
+\begin{example}
+	$p(x)=x^2$ comme polynome
+\end{example}
+\begin{example}{En Particulier}
+	$P=0$ comme polynome \\
+	% je veux dire aue P doit etre
+\end{example}
+
+\begin{definition}
+	on dit que $z_0$ est une racine de P tel que $P(z_0)=0$ \\
+	On utilie le mot racine dans les deux senses
+	\begin{itemize}
+		\item racine (n-ieme) d'un nombre complexe tel que $z_0^n=w$
+		\item racine d'un polynome tel que $P(z_0)=0$
+	\end{itemize}
+\end{definition}
+
+\begin{definition}
+	Soit $P$ un polynôme \\
+	on appelle degré en polynôme \\
+	la puissance la plus grande pour laquelle $n \neq 0$
+	\begin{example}
+		\begin{align*}
+			P(x) = 1+x^2+x^27\\ 
+			deg=27
+		\end{align*}
+	\end{example}
+	\begin{definition}{Question}
+		Soit P un polynôme de degré n
+		combien de racine admet-t-il, (complexe et réel)?
+		\begin{example}
+			\begin{equation*}
+				P(z)=z^n-1
+   			\end{equation*}
+			2 racines réels, et 2 racines complexes
+			\begin{align*}
+				z_0 racines \iff z_0^2 = 0 \\
+				donc \\
+				z_0 \quad \text{est la racine}
+   			\end{align*}
+		\end{example}
+	\end{definition}
+\end{definition}
+
+
+\begin{definition}{Division des polynomes}
+	\begin{theorem}
+		Soit $F$ et $G$ des polynômes, ($degF\leq degG$)\\ 
+		alors ils existent $Q$ et $R$ tels que $degR<degG$
+		\begin{align*}
+			F=QG+R
+  		\end{align*}
+		Si $R=0$, on dit aue F est divisible par G 
+		% \begin{definition}{Algorithme de la division euclidienne}
+		% \end{definition}
+		\begin{example}
+			Voici un exemple de division polynomial
+			\begin{table}
+			\begin{tabular}{|c|c|}
+				\hline
+   				$x^5+x^5+0x^3+3x^2+x+1$ & $x^3+2x+1$ \\ 	
+				\hline 
+				$x^5+2x^3+x2$ & $x^2+x-2$ \\
+				\hline
+   			\end{tabular}
+			\end{table}
+		\end{example}
+	\end{theorem}
+	% \begin{theorem}{cv} 
+\end{definition}
