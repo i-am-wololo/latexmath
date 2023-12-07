@@ -1,1 +1,23 @@
 \subsubsection{Racine \'enieme}
+Soient $w$ et $z$ deux nombre complexes, on cherche a résoudre l'équation
+$w^n = z$ avec $n \in \mathbb{N}^*$. Pour $n>2$, on utilisera le plus souvent la forme exponentielle.
+
+\begin{definition}{racine n-ieme de l'unité}
+	Resolvons $w^n = 1$
+	\begin{enumerate}
+		\item on emploie la forme polaire, $w = r(\cos(\theta)+i\sin(\theta))$ 
+		\item n est un entier positif, donc le nombre complexe a n racines
+		\item la formule pour obtenir un nombre complexe est 
+			\begin{align*}
+				\sqrt[n]{r}(\cos\alpha+i\sin\alpha) \\
+				\alpha = \frac{\theta+2k\pi}{n}
+			\end{align*}
+ 	\end{enumerate}
+	on obtient donc, pour $w = 4i$:
+	\begin{align*}
+		4i = 4(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2})\\
+		k=0, alpha = \frac{\frac{\pi}{2}}{2} =  \frac{\pi}{4} \\
+			w_1= 2(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}) \\
+			\Rightarrow w_1 = 2(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}) = \sqrt{2}+i\sqrt{2}
+	\end{align*}
+\end{definition}
